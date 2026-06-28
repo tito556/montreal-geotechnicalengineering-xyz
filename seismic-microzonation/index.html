@@ -1,0 +1,281 @@
+<!DOCTYPE html><html lang="en"><head><link rel="icon" type="image/svg+xml" href="/img/favicon.svg"><link rel="apple-touch-icon" href="/img/favicon.svg"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Seismic Microzonation Studies for Montreal Projects</title><meta name="description" content="Seismic microzonation in Montreal combining site response analysis, shear wave velocity profiling,"><link rel="canonical" href="https://montreal.geotechnicalengineering.xyz/seismic-microzonation/"><meta property="og:type" content="website"><meta property="og:title" content="Seismic Microzonation Studies for Montreal Projects"><meta property="og:description" content="Seismic microzonation in Montreal combining site response analysis, shear wave velocity profiling, and local seismic hazard"><meta property="og:url" content="https://montreal.geotechnicalengineering.xyz/seismic-microzonation/"><meta property="og:site_name" content="Geotechnical Engineering"><meta property="og:image" content="https://montreal.geotechnicalengineering.xyz/img/microzonificacion-sismica-1.webp"><meta property="og:locale" content="en_CA"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Seismic Microzonation Studies for Montreal Projects"><meta name="twitter:description" content="Seismic microzonation in Montreal combining site response analysis, shear wave velocity profiling, and local seismic hazard assessment per NBCC 2020 and CSA...">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"/","name":"Home"},{"@type":"ListItem","position":2,"name":"Seismic Microzonation Studies for Montreal Projects"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","areaServed":{"@type":"City","name":"Montreal"},"url":"https://montreal.geotechnicalengineering.xyz/seismic-microzonation","description":"Seismic microzonation in Montreal combining site response analysis, shear wave velocity profiling, and local seismic hazard assessment per NBCC 2020 and CSA A23.3. Applied to the St. Lawrence Low","provider":{"@type":"LocalBusiness","address":{"addressCountry":"CA","@type":"PostalAddress","addressLocality":"Montreal"},"telephone":"","name":"Geotechnical Engineering","email":"contact@geotechnicalengineering.xyz"},"name":"Seismic Microzonation Studies for Montreal Projects"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"For a single-lot site in Montreal's central boroughs, a microzonation study including MASW profiling, one borehole with downhole seismic, and 1D ground response analysis typically ranges from CA$6,200 to CA$25,930 depending on depth to bedrock, number of measurement points, and whether 2D analysis is required. Projects in deep clay zones east of Pie-IX Boulevard tend toward the upper end of that range due to the additional testing needed to characterize the full soil column."},"name":"What does a seismic microzonation study cost for a typical Montreal infill project?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Montreal's hazard is driven by intraplate earthquakes in the Western Quebec Seismic Zone, which produce moderate-magnitude events with relatively high short-period energy. While the peak ground acceleration at rock is lower than in Vancouver (subduction source), Montreal's thick clay soils amplify long-period motion strongly. A Site Class E site in Montreal can track record spectral accelerations at 1.0-second period comparable to a Site Class C site in coastal BC, making soil amplification the dominant factor in structural design here."},"name":"How does Montreal's seismic hazard compare to Vancouver or other Canadian cities?"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"The NBCC permits using existing geotechnical data for site classification only when the subsurface conditions are demonstrably uniform across the project footprint and the neighboring data comes from borings within 100 m that reach competent rock. In Montreal's eastern clay basin, we have measured Vs30 values changing by 40% over lateral distances of less than 80 meters due to buried fluvial channels and variable till thickness. A site-specific MASW campaign is the only reliable way to confirm the classification and avoid under-design for resonance effects."},"name":"Can we use the NBCC Site Class from nearby boreholes instead of a microzonation study?"}]}</script>
+<style>/*afx*/@media (max-width: 900px) {
+.sidebar { display: none; }
+.content-area { flex-direction: column; }
+.container { padding: 1rem; }
+.header-top { flex-direction: column; text-align: center; }
+main { padding: 1.5rem; }
+}
+th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+.cta .whatsapp-btn {
+display: inline-block; background: #25D366; color: white;
+padding: .75rem 1.75rem; border-radius: 8px; font-weight: 600;
+margin-bottom: 1.25rem; font-size: 1rem;
+}
+.cta .contacto-line a { color: white; text-decoration: underline; }
+details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+* { margin:0; padding:0; box-sizing:border-box; }
+.actividades-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
+.sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
+main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
+.sidebar .cat-sub[hidden] { display: none; }
+.servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
+.sidebar .home {
+display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
+font-size: .85rem; font-weight: 600;
+border-bottom: 1px solid rgba(255,255,255,0.1);
+text-decoration: none;
+}
+.cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
+/* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
+.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+.servicio:hover { border-color: var(--primary); }
+summary:hover { background: rgba(0,0,0,0.02); }
+.sidebar .cat-sub a {
+display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
+font-size: .78rem; transition: all .15s; text-decoration: none;
+border-left: 2px solid transparent;
+}
+.sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
+footer a { color: rgba(255,255,255,0.85); }
+.sidebar .cat-name:hover { color: #c9a961; }
+.cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
+.sidebar .cat-sub {
+background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
+}
+.servicio p { margin: 0; font-size: .9rem; color: #475569; }
+.sidebar .cat-toggle {
+background: none; border: 0; color: inherit; cursor: pointer;
+padding: .2rem .4rem; font-size: .65rem; transition: transform .2s;
+}
+.sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
+.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
+summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
+footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
+header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
+.cta .whatsapp-btn:hover { background: #1eb853; }
+.servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
+#mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+tr:nth-child(even) { background: #f8fafc; }
+.sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
+main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
+:root {
+--primary: #8B5CF6;
+--accent: #A78BFA;
+--dark: #09090B;
+--bg: #FAFAFA;
+--text: #18181B;
+--font-h: 'Playfair Display', 'Segoe UI', sans-serif;
+--font-b: 'Lora', 'Segoe UI', sans-serif;
+}
+.normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
+details[open] summary::before { content: '− '; }
+.cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
+summary::-webkit-details-marker { display: none; }
+.cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
+a { color: var(--primary); text-decoration: none; }
+body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
+.header-contact a:hover { color: white; }
+.sidebar .cat-row {
+display: flex; justify-content: space-between; align-items: center;
+padding: .65rem 1rem; color: rgba(255,255,255,0.85); font-size: .85rem; font-weight: 500;
+transition: background .15s;
+}
+table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
+/* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
+.sidebar { padding: .5rem 0; }
+.sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
+summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
+main section { margin-bottom: 1.5rem; }
+details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
+.content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
+.sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
+.header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
+main p { margin-bottom: 1rem; color: #334155; }
+.sidebar {
+width: 240px; background: var(--dark); color: white; flex-shrink: 0;
+border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
+max-height: calc(100vh - 2rem); overflow-y: auto;
+}
+main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+h1, h2, h3, h4 { font-family: var(--font-h); }</style><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#831843"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><style>/*afx*//* Dropdowns por encima del hero */
+.dd, .has-dd .dd, .nav-item .dd {
+z-index: 1100 !important;
+}
+/* Sticky para navbar específicos (NO header.hero) */
+.topbar, .navbar, .header-top, .main-header {
+position: sticky !important;
+top: 0 !important;
+z-index: 1010 !important;
+}
+/* Leaflet contained */
+.leaflet-pane { z-index: 400 !important; }
+.leaflet-control { z-index: 800 !important; }
+header.hero, .hero { position: relative !important; }
+.leaflet-container { z-index: 1 !important; }</style><style>/*afx*/p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#831843) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}</style><style>/*afx*/@media (max-width:1100px){
+.nav-item{font-size:.7rem !important}
+.navbar .nav{gap:.4rem !important}
+.cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+.navbar .nav{gap:.55rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}</style><style>/*afx*/@media (min-width:901px){
+aside{position:relative}
+aside+main,aside~main,aside~div>main{margin-left:0}
+.content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+aside{width:100% !important;position:static !important;height:auto !important}
+.navbar{flex-wrap:wrap}
+}
+body>*{max-width:100vw}
+body{overflow-x:clip;max-width:100vw}</style><style>/*afx*/@media (max-width:900px){body{padding-top:90px}}
+body{padding-top:60px}
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}</style><style>/*afx*//* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}</style><style>/*afx*/.cat-arrow{display:inline-block}
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}</style><style>/*afx*/
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+</style><style>/*afx*/body>*{max-width:100vw}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+.navbar .nav{gap:.55rem !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}</style><style>/*afx*/.cat-toggle, .cat-arrow {
+flex-shrink: 0 !important;
+order: 2 !important;
+}
+.cat-name {
+flex: 1 1 auto !important;
+min-width: 0 !important;
+word-break: normal !important;
+overflow-wrap: break-word !important;
+white-space: normal !important;
+order: 1 !important;
+}
+/* cat-sub-wrap: full width abajo */
+.cat-sub-wrap, .cat-sub, .nav-cat-sub {
+flex-basis: 100% !important;
+width: 100% !important;
+max-width: 100% !important;
+order: 3 !important;
+position: static !important;
+background: rgba(0,0,0,.15) !important;
+padding: .4rem 0 .8rem !important;
+}
+/* Sub-item links */
+.cat-sub-wrap a, .cat-sub a, .nav-cat-sub a {
+display: block !important;
+width: 100% !important;
+font-size: .82rem !important;
+line-height: 1.25 !important;
+padding: .35rem 1rem .35rem 1.8rem !important;
+white-space: normal !important;
+word-break: normal !important;
+overflow-wrap: break-word !important;
+box-sizing: border-box !important;
+}
+/* cat-item: BLOCK (no flex) — children flow normal y cat-sub-wrap toma full width */
+.cat-item, details {
+display: block !important;
+position: relative !important;
+}
+/* cat-row interno: SI flex para alinear name + toggle */
+.cat-row {
+display: flex !important;
+flex-wrap: nowrap !important;
+align-items: center !important;
+justify-content: space-between !important;
+width: 100% !important;
+}</style><style>/*afx*/.nav-item.has-dd:nth-last-child(-n+5) .dd{left:auto;right:-1rem}</style><style>/*afx*/.header-top{position:static!important;background:#18181B!important}
+body{padding-top:0!important}
+.layout{padding-top:0!important}</style><style>/*afx*/aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.navbar .nav{gap:.55rem !important}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+body>*{max-width:100vw}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}</style><script>(function(){var L=0;function load(){if(L)return;L=1;!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq("init","384176023222929");fbq("track","PageView");}["scroll","mousemove","touchstart","keydown","click"].forEach(function(e){window.addEventListener(e,load,{passive:!0,once:!0})});setTimeout(load,4000);})();</script><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=384176023222929&ev=PageView&noscript=1"/></noscript>  <link rel="preload" as="image" href="/img/microzonificacion-sismica-1.webp" fetchpriority="high">
+
+<link rel="alternate" hreflang="en-CA" href="https://montreal.geotechnicalengineering.xyz/seismic-microzonation/">
+<link rel="alternate" hreflang="x-default" href="https://montreal.geotechnicalengineering.xyz/seismic-microzonation/">
+</head><body><header><div class="container"><div class="header-top"><div><div style="display:inline-flex;align-items:center;gap:10px;"><div style="width:44px;height:44px;border-radius:50%;background:#8B5CF6;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',sans-serif;font-weight:800;color:#fafafa;letter-spacing:-0.02em;line-height:1;color:#FAFAFA;font-size:19px;">MO</div><span style="font-family:'Playfair Display',sans-serif;font-weight:800;color:#fafafa;letter-spacing:-0.02em;line-height:1;font-size:22px;">Montreal</span></div><div style="color:rgba(255,255,255,0.65);font-size:.8rem;margin-top:.4rem">Montreal, Canada</div></div><div class="header-contact"><a href="mailto:contact@geotechnicalengineering.xyz">contact@geotechnicalengineering.xyz</a></div></div><nav aria-label="breadcrumb" style="padding:.3rem 0;font-size:.78rem;color:rgba(255,255,255,0.75)"><ol style="list-style:none;display:flex;gap:.35rem;flex-wrap:wrap;padding:0;margin:0"><li><a href="/" style="color:inherit;text-decoration:none">Home</a></li><li>›</li><li>Seismic & Special</li><li>›</li><li aria-current="page" style="color:rgba(255,255,255,0.95)">Seismic Microzonation Studies for Montreal Projects</li></ol></nav><h1>Seismic Microzonation Studies for Montreal Projects</h1></div></header><div class="container"><div class="content-area"><aside class="sidebar"><nav><a href="index.html" class="home">Home</a><div class="cat-item" data-cat="investigation"><div class="cat-row"><a href="/investigation/" class="cat-name">Investigation</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Investigation"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/cpt-test/">CPT (Cone Penetration Test)</a></div></div><div class="cat-item" data-cat="lab-in-situ"><div class="cat-row"><a href="/lab-in-situ/" class="cat-name">In-Situ</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir In-Situ"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/sand-cone-density/">Field density test (sand cone method)</a></div></div><div class="cat-item" data-cat="laboratory"><div class="cat-row"><a href="/laboratory/" class="cat-name">Laboratory</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Laboratory"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/atterberg-limits/">Atterberg limits</a><a href="/grain-size/">Grain size analysis (sieve + hydrometer)</a></div></div><div class="cat-item" data-cat="foundations"><div class="cat-row"><a href="/foundations/" class="cat-name">Foundations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Foundations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/piles/">Pile foundation design</a></div></div><div class="cat-item" data-cat="slopes"><div class="cat-row"><a href="/slopes/" class="cat-name">Slopes & Walls</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Slopes & Walls"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/anchors/">Active/passive anchor design</a><a href="/retaining-walls/">Retaining wall design</a><a href="/slope-stability/">Slope stability analysis</a></div></div><div class="cat-item" data-cat="ground-improvement"><div class="cat-row"><a href="/ground-improvement/" class="cat-name">Improvement</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Improvement"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/stone-columns/">Stone column design</a><a href="/vibrocompaction/">Vibrocompaction design</a></div></div><div class="cat-item" data-cat="seismic"><div class="cat-row"><a href="/seismic/" class="cat-name">Seismic</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Seismic"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/seismic-isolation/">Base isolation seismic design</a><a href="/seismic-microzonation/">Seismic microzonation</a><a href="/liquefaction/">Soil liquefaction analysis</a></div></div><div class="cat-item" data-cat="road-geotechnics"><div class="cat-row"><a href="/road-geotechnics/" class="cat-name">Roadway</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Roadway"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/cbr-road/">CBR study for road design</a><a href="/flexible-pavement/">Flexible pavement design</a><a href="/rigid-pavement/">Rigid pavement design</a></div></div><div class="cat-item" data-cat="excavations"><div class="cat-row"><a href="/excavations/" class="cat-name">Excavations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Excavations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/soft-ground-tunnels/">Geotechnical analysis for soft soil tunnels</a><a href="/deep-excavations/">Geotechnical design of deep excavations</a><a href="/excavation-monitoring/">Geotechnical excavation monitoring</a></div></div></nav></aside><main><section><p>Montreal's development has always been tied to its geology—the city sits on the St. Lawrence Lowlands, a sedimentary basin of Paleozoic limestone, shale, and sandstone overlain by glacial till and deep marine clay deposits in the eastern districts. This geological setting, combined with the region's moderate but real seismicity linked to the Western Quebec Seismic Zone, creates a complex site amplification picture that uniform code provisions cannot capture. A <a data-interlink="1" href="/seismic-microzonation/">seismic microzonation study</a> integrates field shear wave velocity measurements with geotechnical data to map how ground motion varies across a single site or an entire borough, helping engineers place critical infrastructure where shaking will be least amplified. For projects in Hochelaga-Maisonneuve or Ville-Marie, where the soil column often exceeds 30 meters of Champlain Sea clay, the surface response during even a moderate M5 event can differ sharply from rock outcrop predictions.</p></section><blockquote style="border-left:4px solid #8B5CF6;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">In the Champlain Sea clay basin, Vs30 values below 180 m/s are common, pushing sites into Site Class E and demanding rigorous ground response analysis for any structure taller than three storeys.</blockquote><section><h2>Service characteristics in Montreal</h2><div>Montreal’s population of over 1.7 million is concentrated on soils that range from stiff till on the slopes of Mount Royal—elevation 233 meters—to thick, sensitive clay in the east. The 1732 earthquake, estimated at moment magnitude 5.8, caused significant damage in the city, and today's NBCC 2020 seismic hazard maps assign Montreal a Sa(0.2s) value that demands site-specific analysis for Class C, D, and E sites. A <a href="/masw/">MASW survey</a> is typically the first step: we lay out 24-channel geophone spreads to extract Vs profiles down to 30 meters or deeper, directly feeding the site classification per Table 4.1.8.4.A of the NBCC. Where lateral variability is suspected, we combine MASW lines with <a href="/seismic-refraction/">seismic refraction tomography</a> to image the bedrock surface and identify buried paleochannels that can focus seismic energy, a common problem in the former Rivière Saint-Pierre corridor near the Turcot interchange.</div></section><figure style="margin:2rem auto;text-align:center;max-width:60%"><img src="/img/microzonificacion-sismica-1.webp" alt="Seismic Microzonation Studies for Montreal Projects" width="600" height="300" loading="eager" decoding="async" style="width:100%;max-height:160px;object-fit:cover;border-radius:8px" fetchpriority="high"><figcaption style="font-size:.78rem;color:#64748b;margin-top:.4rem">Seismic Microzonation Studies for Montreal Projects</figcaption></figure><div style="max-width:700px;margin:1.5rem auto;border-left:4px solid #8B5CF6;border-radius:6px;overflow:hidden;background:#FFF;box-shadow:0 1px 3px rgba(0,0,0,.05)"><table style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr style="background:#8B5CF6;color:#FFF"><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Parameter</th><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Typical value</th></tr></thead><tbody><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Vs30 classification (NBCC 2020)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Site Class C (360-760 m/s) to Class E (<180 m/s)</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Typical soil column in central Montreal</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">0-5 m fill/sand, 5-35 m silty clay, >35 m shale bedrock</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Site-specific PGA (Sa at 0.2s)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">0.25g to 0.45g for Class D/E sites</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Fundamental site period (T0)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">0.4 to 1.2 seconds on deep clay</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Key analysis method</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">1D equivalent-linear (SHAKE) or 2D nonlinear (FLAC/Plaxis)</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Seismic hazard source</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Western Quebec Seismic Zone, Mmax ~7.0</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Ground motion selection</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Spectrum-matched accelerograms per NBCC Commentary J</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Liquefaction screening depth</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Upper 20 m where SPT N1(60) < 15 blows</td></tr></tbody></table></div><section><h2>Critical ground factors in Montreal</h2><p>The Champlain Sea clay that underlies much of eastern Montreal and Laval presents a sharp risk profile: its high plasticity (PI often 30-50%) and sensitivity can trigger cyclic softening during prolonged shaking, a mechanism distinct from classic liquefaction in sands. In the 2010 Val-des-Bois M5.0 earthquake, spectral accelerations at 0.2 seconds in Montreal's clay zones exceeded code-computed values by 30-40% at certain periods, a reminder that basin-edge effects and deep impedance contrasts demand more than a simple Vs30 check. Our microzonation approach identifies zones where the fundamental site period aligns with the structural period of mid-rise buildings, flagging resonance risk that standard hazard maps miss. For sites near the St. Lawrence River, we also evaluate lateral spreading potential using the Youd et al. (2001) empirical method, correlating SPT blow counts from our <a data-interlink="1" href="/spt-drilling/">SPT drilling program</a> with expected cyclic stress ratios from the design earthquake.</p></section><section class="block mid-cta-e837" style="padding:2rem 0"><div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#16A34A15,#16A34A08);border-left:4px solid #16A34A;padding:1.6rem 1.8rem;border-radius:8px;text-align:center"><h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3><p style="margin:0 0 1rem;color:#64748B;font-size:.92rem;text-align:center">Reply within 24h.</p><div style="margin:.4rem 0 0;text-align:center"><a href="mailto:contact@geotechnicalengineering.xyz" style="display:inline-block;background:#16A34A;color:#FFF !important;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:800;font-size:1.05rem;box-shadow:0 4px 12px rgba(0,0,0,.15)">Email: contact@geotechnicalengineering.xyz</a></div></div></section><div class="normas"><strong>Applicable standards:</strong> NBCC 2020 Part 4, Division B, CSA A23.3-19 (Annex A), ASTM D4428/D4428M-14 for crosshole seismic, ASCE 7-22 Chapter 21 site classification, NCEER/NSF (Youd & Idriss 2001) for liquefaction triggering </div><section><h2>Our services</h2><hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto"><p>The microzonation workflow in Montreal is structured around three primary service modules, which can be provided individually or as an integrated site-specific seismic hazard solution. These modules adhere to the stipulations of Part 4 in NBCC 2020 along with the structural design standards outlined in CSA A23.3.</p><style>/*afx*/.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#8B5CF6;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}
+.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}
+.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}
+.servicios-grid a.servicio-link:hover{border-color:#8B5CF6;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}
+.servicios-grid a.servicio-link:hover h3{color:#8B5CF6}
+.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}
+.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}/*sbhfix*/aside .sb-home{color:#FFF !important}</style><div class="servicios-grid"><div class="servicio"><h3>Site Classification and Vs Profiling</h3><p>To establish Vs30 and the complete shear wave velocity profile down to bedrock, we employ both active and passive surface wave techniques (MASW, MAM, ReMi) alongside downhole seismic measurements in boreholes. This process yields the Site Class (C, D, E, or F) mandated by NBCC for structural design and pinpoints soft strata that influence ground response.</p></div><div class="servicio"><h3>1D and 2D Ground Response Analysis</h3><p>Equivalent-linear analysis is carried out with DEEPSOIL or SHAKE2000, utilizing modulus reduction and damping curves tailored to Montreal clay (Massoudi &amp; Gagne 2009). When dealing with intricate basin geometries, we deploy 2D FLAC models that simulate surface wave generation at the rock-soil boundary, producing design spectra and acceleration time histories.</p></div><div class="servicio"><h3>Liquefaction and Cyclic Softening Assessment</h3><p>Liquefaction triggering evaluations based on SPT and CPT data follow the Idriss-Boulanger (2008) and NCEER methodologies, adjusted for sensitive clay behavior. The analysis encompasses post-triggering settlement estimates and lateral spreading displacement calculations to meet setback criteria near the St. Lawrence waterfront and canal network.</p></div></div></section><section><h2>Top questions</h2><details><summary>What does a seismic microzonation study cost for a typical Montreal infill project?</summary><p>For a single-lot site in Montreal's central districts, a microzonation study incorporating MASW profiling, one borehole with downhole seismic, and 1D ground response analysis generally costs between CA$6,200 and CA$25,930. The final price depends on bedrock depth, measurement point count, and whether 2D analysis is necessary. Projects situated in deep clay regions east of Pie-IX Boulevard typically fall at the higher end of this range because additional testing is needed to fully characterize the soil column.</p></details><details><summary>How does Montreal's seismic hazard compare to Vancouver or other Canadian cities?</summary><p>Earthquake hazard in Montreal originates from intraplate events in the Western Quebec Seismic Zone, which are moderate in magnitude but carry relatively high short-period energy. Although peak ground acceleration on rock is less than that in Vancouver (a subduction zone), Montreal's thick clay deposits strongly amplify long-period motion. A Site Class E location in Montreal can have spectral accelerations at a 1.0-second period similar to those of a Site Class C site in coastal British Columbia, making soil amplification the key factor in structural design for this region.</p></details><details><summary>Can we use the NBCC Site Class from nearby boreholes instead of a microzonation study?</summary><p>The NBCC allows the use of existing geotechnical data for site classification only if subsurface conditions are clearly uniform across the project area and adjacent data originate from boreholes within 100 meters that reach competent rock. In Montreal's eastern clay basin, we have observed Vs30 values varying by 40% over horizontal distances less than 80 meters, due to buried fluvial channels and variable till thickness. To reliably determine the classification and prevent under-design for resonance effects, a site-specific MASW survey is the sole dependable approach.</p></details></section><section><h2>Coverage in Montreal</h2><hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto"><link rel="stylesheet" href="/css/leaflet-2950.css"/><div id="mapa-ciudad"></div><script src="/js/leaflet-2950.js"></script><script>
+var map = L.map('mapa-ciudad').setView([45.5032,-73.5698], 12);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',{attribution:'&copy; OSM &copy; CARTO',subdomains:'abcd',maxZoom:19}).addTo(map);L.marker([45.5032,-73.5698],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36]})}).addTo(map);
+L.circle([45.5032,-73.5698],{radius:3000,color:'#8B5CF6',fillColor:'#A78BFA',fillOpacity:0.18,weight:2}).addTo(map).bindPopup('Coverage area — Montreal');
+</script></section><section class="block video-block" style="padding:2rem 1.5rem"><div style="max-width:720px;margin:0 auto"><h2 style="margin-bottom:1rem;font-weight:700;font-size:1.4rem">Video resource</h2><div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px"><iframe src="https://www.youtube-nocookie.com/embed/ShZuIBiHwLk" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none" loading="lazy" allowfullscreen></iframe></div></div></section></main></div></div><footer style="background:linear-gradient(135deg,#09090B,#A78BFA22);color:#FFF;padding:3rem 1.5rem"><div style="max-width:720px;margin:0 auto;text-align:center"><h3 style="font-size:1.4rem;margin:0 0 .5rem;color:#FFF">Ready for your project?</h3><p style="margin:0 0 1.5rem;color:rgba(255,255,255,.8)">Montreal, Canada</p><a href="mailto:contact@geotechnicalengineering.xyz" style="display:inline-block;background:#A78BFA;color:#FFF !important;padding:.9rem 2.2rem;border-radius:8px;text-decoration:none;font-weight:700;font-size:1rem;box-shadow:0 4px 14px rgba(0,0,0,.25)">Request a quote — contact@geotechnicalengineering.xyz</a><p style="margin:1.8rem 0 0;font-size:.82rem;color:rgba(255,255,255,.5)">© 2026 Geotechnical Engineering · All rights reserved</p></div><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>References:</strong><a href="https://www.csagroup.org/" rel="nofollow noopener" target="_blank">CSA Group Standards</a> · <a href="https://www.astm.org/products-services/standards-and-publications.html" rel="nofollow noopener" target="_blank">ASTM Standards</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Geotechnical</a></div><div class="updated-info" data-updated="2026-04-27" style="text-align:center;font-size:.85rem;opacity:.7;padding:.5rem 0">Last updated: 2026-04-27</div></footer><script>
+// Sidebar cat-toggle: click expande/contrae cat-sub (REGLA 30b)
+document.addEventListener('click', function(e) {
+var btn = e.target.closest('.cat-toggle');
+if (!btn) return;
+e.preventDefault();
+var item = btn.closest('.cat-item');
+if (!item) return;
+var sub = item.querySelector('.cat-sub');
+if (!sub) return;
+var open = btn.getAttribute('aria-expanded') === 'true';
+btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+if (open) {
+sub.setAttribute('hidden', '');
+} else {
+sub.removeAttribute('hidden');
+}
+});
+</script></body></html>
